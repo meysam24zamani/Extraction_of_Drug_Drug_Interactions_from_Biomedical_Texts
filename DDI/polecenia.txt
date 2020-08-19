@@ -1,0 +1,11 @@
+Training
+python extract-features.py  ../../data/Train/DrugBank/ > train.features
+python train-svm_stage1.py < train.features
+python predict-svm_stage1.py < train.features > 1st.stage.train.results
+python train-svm_stage2.py < 1st.stage.train.results 
+
+Test
+python extract-features.py  ../../data/Test-DDI/DrugBank/ > test.features
+python predict-svm_stage1.py < test.features > 1st.stage.test.results
+python predict-svm_stage2.py < 1st.stage.test.results > task9.2_2stageSVM_01.txt
+java -jar ../../eval/evaluateDDI.jar ../../data/Test-DDI/DrugBank task9.2_2stageSVM_01.txt

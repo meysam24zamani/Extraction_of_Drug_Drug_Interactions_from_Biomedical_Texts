@@ -1,0 +1,41 @@
+SCORES FOR THE GROUP: 2stageSVM RUN=012
+Gold Dataset: /
+
+Partial Evaluation: only detection of DDI (regadless to the type)
+tp	fp	fn	total	prec	recall	F1
+526	1018	271	797	0.3407	0.66	0.4494
+
+
+Detection and Classification of DDI
+tp	fp	fn	total	prec	recall	F1
+228	1316	569	797	0.1477	0.2861	0.1948
+
+
+________________________________________________________________________
+
+SCORES FOR DDI TYPE
+Scores for ddi with type mechanism
+tp	fp	fn	total	prec	recall	F1
+44	172	188	232	0.2037	0.1897	0.1964
+
+
+Scores for ddi with type effect
+tp	fp	fn	total	prec	recall	F1
+126	240	274	400	0.3443	0.315	0.329
+
+
+Scores for ddi with type advise
+tp	fp	fn	total	prec	recall	F1
+54	245	86	140	0.1806	0.3857	0.246
+
+
+Scores for ddi with type int
+tp	fp	fn	total	prec	recall	F1
+4	659	21	25	0.006	0.16	0.0116
+
+
+MACRO-AVERAGE MEASURES:
+	P	R	F1
+	0.1837	0.2626	0.2161
+________________________________________________________________________
+
