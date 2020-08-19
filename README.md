@@ -1,0 +1,2 @@
+# Extraction_of_Drug_Drug_Interactions_from_Biomedical_Texts
+ Its a challenge of recognizing drug names, detecting drug-drug interactions and further categorizing them into one of the four classes. I present two machine learning systems. The NER System is resolved with use of CRF model and extensive features’ set. The obtained F1 score is 64%. In the DDI system I apply two-stage SVM with data preprocessing. The F1 scores obtained for both stages are: 51%, 18% and the macro-average score: 20%.
